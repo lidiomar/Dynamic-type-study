@@ -18,7 +18,7 @@ class SimpleListViewController: UIViewController {
     private let cellIdentifier = "SimpleListTableViewCell"
     private let simpleListDataSource = [
         Cuisine(image: "chinese", description: "Lorem ipsum dolor sit amet."),
-        Cuisine(image: "caribbean", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"),
+        Cuisine(image: "caribbean", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
         Cuisine(image: "greek", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
         Cuisine(image: "indian", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"),
         Cuisine(image: "italian", description: "Lorem ipsum"),
@@ -40,8 +40,6 @@ class SimpleListViewController: UIViewController {
         let nib = UINib(nibName: cellIdentifier, bundle: .main)
         tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
         tableView.dataSource = self
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = UITableView.automaticDimension
     }
 }
 
