@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="415.94202898550731" y="815.625"/>
         </scene>
-        <!--Tab2-->
+        <!--Tab1-->
         <scene sceneID="Ix5-Uq-ixH">
             <objects>
                 <viewController id="r7s-C3-xL2" customClass="ViewController" customModule="DynamicTypePresentation" customModuleProvider="target" sceneMemberID="viewController">
@@ -164,13 +164,13 @@
                             <constraint firstItem="CqJ-PT-nfR" firstAttribute="bottom" secondItem="dfI-xh-ugk" secondAttribute="bottom" id="qRA-Np-PZ8"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tab2" image="closeLines" id="Iud-9x-qr4"/>
+                    <tabBarItem key="tabBarItem" title="Tab1" image="closeLines" id="Iud-9x-qr4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hsi-y8-sYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1126" y="816"/>
         </scene>
-        <!--Tab1-->
+        <!--Tab2-->
         <scene sceneID="q9s-Hj-BUP">
             <objects>
                 <viewController id="ksb-m3-rdz" customClass="SimpleListViewController" customModule="DynamicTypePresentation" customModuleProvider="target" sceneMemberID="viewController">
@@ -192,7 +192,7 @@
                             <constraint firstItem="87q-mD-bwJ" firstAttribute="leading" secondItem="Vmm-1t-mSL" secondAttribute="leading" id="iPg-Gc-d3d"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tab1" image="arrowList" id="rU6-gd-yXa"/>
+                    <tabBarItem key="tabBarItem" title="Tab2" image="arrowList" id="rU6-gd-yXa"/>
                     <connections>
                         <outlet property="tableView" destination="87q-mD-bwJ" id="LIC-kB-3xC"/>
                     </connections>

@@ -8,26 +8,20 @@
 import Foundation
 import UIKit
 
-struct Cuisine {
-    var image: String
-    var description: String
-}
-
 class SimpleListViewController: UIViewController {
     
     private let cellIdentifier = "SimpleListTableViewCell"
     private let simpleListDataSource = [
-        Cuisine(image: "chinese", description: "Lorem ipsum dolor sit amet."),
-        Cuisine(image: "caribbean", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-        Cuisine(image: "greek", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-        Cuisine(image: "indian", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"),
-        Cuisine(image: "italian", description: "Lorem ipsum"),
-        Cuisine(image: "korean", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"),
-        Cuisine(image: "mexican", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."),
-        Cuisine(image: "moroccan", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"),
-        Cuisine(image: "peruvian", description: "Lorem ipsum dolor."),
-        Cuisine(image: "thai", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")
-    ]
+        "Lorem ipsum dolor sit amet.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "Lorem ipsum",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "Lorem ipsum dolor.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"]
     
     @IBOutlet private weak var tableView: UITableView!
     
@@ -54,8 +48,8 @@ extension SimpleListViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         let item = simpleListDataSource[indexPath.row]
-        cell.simpleListImage.image = UIImage(named: item.image)
-        cell.simpleListLabel.text = item.description
+        cell.simpleListLabelCount.text = "\(indexPath.row+1)."
+        cell.simpleListLabel.text = item
         return cell
     }
 }
