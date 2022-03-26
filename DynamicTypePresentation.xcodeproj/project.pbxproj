@@ -11,11 +11,12 @@
 		7021478827EE21A300069AD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021478727EE21A300069AD1 /* SceneDelegate.swift */; };
 		7021478A27EE21A300069AD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021478927EE21A300069AD1 /* ViewController.swift */; };
 		7021478D27EE21A300069AD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7021478B27EE21A300069AD1 /* Main.storyboard */; };
-		7021478F27EE21A500069AD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7021478E27EE21A500069AD1 /* Assets.xcassets */; };
 		7021479227EE21A500069AD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7021479027EE21A500069AD1 /* LaunchScreen.storyboard */; };
 		7021479A27EE3DBF00069AD1 /* SimpleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021479927EE3DBF00069AD1 /* SimpleListViewController.swift */; };
 		7021479D27EE402700069AD1 /* SimpleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021479B27EE402700069AD1 /* SimpleListTableViewCell.swift */; };
 		7021479E27EE402700069AD1 /* SimpleListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7021479C27EE402700069AD1 /* SimpleListTableViewCell.xib */; };
+		7062026527EE8C12005A13C1 /* CustomFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062026427EE8C12005A13C1 /* CustomFontViewController.swift */; };
+		7062026927EE9596005A13C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7062026827EE9596005A13C1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +25,13 @@
 		7021478727EE21A300069AD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7021478927EE21A300069AD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7021478C27EE21A300069AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7021478E27EE21A500069AD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7021479127EE21A500069AD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7021479327EE21A500069AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7021479927EE3DBF00069AD1 /* SimpleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListViewController.swift; sourceTree = "<group>"; };
 		7021479B27EE402700069AD1 /* SimpleListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListTableViewCell.swift; sourceTree = "<group>"; };
 		7021479C27EE402700069AD1 /* SimpleListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleListTableViewCell.xib; sourceTree = "<group>"; };
+		7062026427EE8C12005A13C1 /* CustomFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontViewController.swift; sourceTree = "<group>"; };
+		7062026827EE9596005A13C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Dynamic type examples/Simple label/DynamicType/Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +64,35 @@
 		7021478427EE21A300069AD1 /* DynamicTypePresentation */ = {
 			isa = PBXGroup;
 			children = (
+				7062026327EE8BF7005A13C1 /* CustomFont */,
+				7062026227EE8BE7005A13C1 /* SimpleList */,
 				7021478527EE21A300069AD1 /* AppDelegate.swift */,
 				7021478727EE21A300069AD1 /* SceneDelegate.swift */,
 				7021478927EE21A300069AD1 /* ViewController.swift */,
 				7021478B27EE21A300069AD1 /* Main.storyboard */,
-				7021478E27EE21A500069AD1 /* Assets.xcassets */,
 				7021479027EE21A500069AD1 /* LaunchScreen.storyboard */,
+				7062026827EE9596005A13C1 /* Assets.xcassets */,
 				7021479327EE21A500069AD1 /* Info.plist */,
+			);
+			path = DynamicTypePresentation;
+			sourceTree = "<group>";
+		};
+		7062026227EE8BE7005A13C1 /* SimpleList */ = {
+			isa = PBXGroup;
+			children = (
 				7021479927EE3DBF00069AD1 /* SimpleListViewController.swift */,
 				7021479B27EE402700069AD1 /* SimpleListTableViewCell.swift */,
 				7021479C27EE402700069AD1 /* SimpleListTableViewCell.xib */,
 			);
-			path = DynamicTypePresentation;
+			path = SimpleList;
+			sourceTree = "<group>";
+		};
+		7062026327EE8BF7005A13C1 /* CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				7062026427EE8C12005A13C1 /* CustomFontViewController.swift */,
+			);
+			path = CustomFont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +155,8 @@
 			files = (
 				7021479227EE21A500069AD1 /* LaunchScreen.storyboard in Resources */,
 				7021479E27EE402700069AD1 /* SimpleListTableViewCell.xib in Resources */,
-				7021478F27EE21A500069AD1 /* Assets.xcassets in Resources */,
 				7021478D27EE21A300069AD1 /* Main.storyboard in Resources */,
+				7062026927EE9596005A13C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7062026527EE8C12005A13C1 /* CustomFontViewController.swift in Sources */,
 				7021478A27EE21A300069AD1 /* ViewController.swift in Sources */,
 				7021479D27EE402700069AD1 /* SimpleListTableViewCell.swift in Sources */,
 				7021478627EE21A300069AD1 /* AppDelegate.swift in Sources */,

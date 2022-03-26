@@ -11,5 +11,6 @@ class SimpleListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var simpleListLabel: UILabel!
     @IBOutlet weak var simpleListImage: UIImageView!
-    
+    @IBOutlet weak var simpleImageHeight: NSLayoutConstraint!
+    @IBOutlet weak var simpleImageWidth: NSLayoutConstraint!
 }
