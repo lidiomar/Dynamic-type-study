@@ -16,7 +16,7 @@
 		7021479D27EE402700069AD1 /* SimpleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021479B27EE402700069AD1 /* SimpleListTableViewCell.swift */; };
 		7021479E27EE402700069AD1 /* SimpleListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7021479C27EE402700069AD1 /* SimpleListTableViewCell.xib */; };
 		7062026527EE8C12005A13C1 /* CustomFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062026427EE8C12005A13C1 /* CustomFontViewController.swift */; };
-		7062026927EE9596005A13C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7062026827EE9596005A13C1 /* Assets.xcassets */; };
+		7062026B27EF532C005A13C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7062026A27EF532C005A13C1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		7021479B27EE402700069AD1 /* SimpleListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListTableViewCell.swift; sourceTree = "<group>"; };
 		7021479C27EE402700069AD1 /* SimpleListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleListTableViewCell.xib; sourceTree = "<group>"; };
 		7062026427EE8C12005A13C1 /* CustomFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontViewController.swift; sourceTree = "<group>"; };
-		7062026827EE9596005A13C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Dynamic type examples/Simple label/DynamicType/Assets.xcassets"; sourceTree = "<group>"; };
+		7062026A27EF532C005A13C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +71,8 @@
 				7021478927EE21A300069AD1 /* ViewController.swift */,
 				7021478B27EE21A300069AD1 /* Main.storyboard */,
 				7021479027EE21A500069AD1 /* LaunchScreen.storyboard */,
-				7062026827EE9596005A13C1 /* Assets.xcassets */,
 				7021479327EE21A500069AD1 /* Info.plist */,
+				7062026A27EF532C005A13C1 /* Assets.xcassets */,
 			);
 			path = DynamicTypePresentation;
 			sourceTree = "<group>";
@@ -155,8 +155,8 @@
 			files = (
 				7021479227EE21A500069AD1 /* LaunchScreen.storyboard in Resources */,
 				7021479E27EE402700069AD1 /* SimpleListTableViewCell.xib in Resources */,
+				7062026B27EF532C005A13C1 /* Assets.xcassets in Resources */,
 				7021478D27EE21A300069AD1 /* Main.storyboard in Resources */,
-				7062026927EE9596005A13C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
