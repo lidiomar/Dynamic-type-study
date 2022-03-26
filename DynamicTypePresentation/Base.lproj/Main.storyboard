@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X9t-bE-gQD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ODz-aS-sIA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,48 +17,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A custom font title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw3-wA-map">
-                                <rect key="frame" x="16" y="149" width="382" height="29.5"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="italian" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLX-C4-JyX">
-                                <rect key="frame" x="177" y="194.5" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="tBH-MC-V9p"/>
-                                    <constraint firstAttribute="width" constant="60" id="wR0-aW-Nbj"/>
-                                </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RGP-Oh-WiI">
-                                <rect key="frame" x="16" y="104" width="382" height="17"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KmH-av-d1L">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label with option 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97V-gG-LvU">
-                                        <rect key="frame" x="0.0" y="0.0" width="121" height="17"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RGP-Oh-WiI">
+                                        <rect key="frame" x="16" y="16" width="382" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label with text 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97V-gG-LvU">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="17"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label with text 2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjr-3U-paj">
+                                                <rect key="frame" x="275.5" y="0.0" width="106.5" height="17"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A custom font title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw3-wA-map">
+                                        <rect key="frame" x="16" y="41" width="382" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label with option 2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjr-3U-paj">
-                                        <rect key="frame" x="259" y="0.0" width="123" height="17"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="italian" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLX-C4-JyX">
+                                        <rect key="frame" x="177" y="86.5" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="tBH-MC-V9p"/>
+                                            <constraint firstAttribute="width" constant="60" id="wR0-aW-Nbj"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="GLX-C4-JyX" firstAttribute="centerX" secondItem="KmH-av-d1L" secondAttribute="centerX" id="2yo-Xd-wrg"/>
+                                    <constraint firstAttribute="trailing" secondItem="aw3-wA-map" secondAttribute="trailing" constant="16" id="4hs-Y3-Dkt"/>
+                                    <constraint firstItem="RGP-Oh-WiI" firstAttribute="leading" secondItem="KmH-av-d1L" secondAttribute="leading" constant="16" id="4lI-rz-0Lf"/>
+                                    <constraint firstAttribute="trailing" secondItem="RGP-Oh-WiI" secondAttribute="trailing" constant="16" id="9Af-Gj-Vdv"/>
+                                    <constraint firstItem="aw3-wA-map" firstAttribute="leading" secondItem="KmH-av-d1L" secondAttribute="leading" constant="16" id="aak-fQ-3nQ"/>
+                                    <constraint firstItem="GLX-C4-JyX" firstAttribute="top" secondItem="aw3-wA-map" secondAttribute="bottom" constant="16" id="njy-ez-fKC"/>
+                                    <constraint firstItem="aw3-wA-map" firstAttribute="top" secondItem="RGP-Oh-WiI" secondAttribute="bottom" constant="8" symbolic="YES" id="vJV-U1-wXa"/>
+                                    <constraint firstItem="RGP-Oh-WiI" firstAttribute="top" secondItem="KmH-av-d1L" secondAttribute="top" constant="16" id="zgd-qQ-HMc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="puE-Ha-BUY"/>
-                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RGP-Oh-WiI" firstAttribute="top" secondItem="puE-Ha-BUY" secondAttribute="top" constant="16" id="DGI-dH-5h5"/>
-                            <constraint firstItem="aw3-wA-map" firstAttribute="leading" secondItem="puE-Ha-BUY" secondAttribute="leading" constant="16" id="JgZ-IR-f7J"/>
-                            <constraint firstItem="puE-Ha-BUY" firstAttribute="trailing" secondItem="RGP-Oh-WiI" secondAttribute="trailing" constant="16" id="Xdn-Ma-pYR"/>
-                            <constraint firstItem="GLX-C4-JyX" firstAttribute="top" secondItem="aw3-wA-map" secondAttribute="bottom" constant="16" id="ZMu-2t-ZtO"/>
-                            <constraint firstItem="RGP-Oh-WiI" firstAttribute="leading" secondItem="puE-Ha-BUY" secondAttribute="leading" constant="16" id="hAM-KE-m5K"/>
-                            <constraint firstItem="GLX-C4-JyX" firstAttribute="centerX" secondItem="o2d-xJ-hGL" secondAttribute="centerX" id="hL3-Cc-06E"/>
-                            <constraint firstItem="puE-Ha-BUY" firstAttribute="trailing" secondItem="aw3-wA-map" secondAttribute="trailing" constant="16" id="jMz-fM-jGT"/>
-                            <constraint firstItem="aw3-wA-map" firstAttribute="top" secondItem="RGP-Oh-WiI" secondAttribute="bottom" constant="28" id="kxM-YS-A3J"/>
+                            <constraint firstItem="KmH-av-d1L" firstAttribute="top" secondItem="puE-Ha-BUY" secondAttribute="top" id="dlf-4f-YQW"/>
+                            <constraint firstAttribute="trailing" secondItem="KmH-av-d1L" secondAttribute="trailing" id="fqZ-4b-Ehh"/>
+                            <constraint firstItem="KmH-av-d1L" firstAttribute="leading" secondItem="o2d-xJ-hGL" secondAttribute="leading" id="iSm-0G-8iF"/>
+                            <constraint firstItem="puE-Ha-BUY" firstAttribute="bottom" secondItem="KmH-av-d1L" secondAttribute="bottom" id="m0b-V1-IyO"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tab3" image="dropArrow" id="EoA-lH-zdi"/>
@@ -85,10 +97,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfI-xh-ugk">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdN-n4-bgF">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dV-RB-N0g">
@@ -142,7 +154,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CqJ-PT-nfR"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dfI-xh-ugk" firstAttribute="leading" secondItem="CqJ-PT-nfR" secondAttribute="leading" id="Icg-QS-8zm"/>
                             <constraint firstItem="CqJ-PT-nfR" firstAttribute="trailing" secondItem="dfI-xh-ugk" secondAttribute="trailing" id="Xx9-BS-uZn"/>
@@ -156,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hsi-y8-sYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-349" y="816"/>
+            <point key="canvasLocation" x="-1126" y="816"/>
         </scene>
         <!--Tab1-->
         <scene sceneID="q9s-Hj-BUP">
@@ -167,7 +179,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="87q-mD-bwJ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -187,23 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Byt-cF-WPA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1078" y="816"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="oxt-x0-Skp">
-            <objects>
-                <navigationController id="X9t-bE-gQD" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kcf-gL-dwK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="ODz-aS-sIA" kind="relationship" relationship="rootViewController" id="WFJ-Ms-EuW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a2v-e9-Lz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1228" y="-2"/>
+            <point key="canvasLocation" x="-349" y="816"/>
         </scene>
         <!--A simple example-->
         <scene sceneID="lbf-X9-Ikx">
@@ -217,7 +213,7 @@
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" systemColor="systemRedColor"/>
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
                                 <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -225,9 +221,9 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="ksb-m3-rdz" kind="relationship" relationship="viewControllers" id="Xmt-sx-5HG"/>
-                        <segue destination="r7s-C3-xL2" kind="relationship" relationship="viewControllers" id="OD2-3p-2pW"/>
-                        <segue destination="qBe-hY-tz0" kind="relationship" relationship="viewControllers" id="ZQc-TB-KkX"/>
+                        <segue destination="r7s-C3-xL2" kind="relationship" relationship="viewControllers" id="uLc-2n-yjV"/>
+                        <segue destination="ksb-m3-rdz" kind="relationship" relationship="viewControllers" id="Xn7-pu-3sw"/>
+                        <segue destination="qBe-hY-tz0" kind="relationship" relationship="viewControllers" id="tuH-5B-rkA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0g3-ht-v8F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -242,12 +238,6 @@
         <image name="dropArrow" width="24" height="24"/>
         <image name="italian" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
