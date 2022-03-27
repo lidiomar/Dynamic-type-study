@@ -34,7 +34,7 @@ class SimpleListViewController: UIViewController {
         let nib = UINib(nibName: cellIdentifier, bundle: .main)
         tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
         tableView.dataSource = self
-        tableView.estimatedRowHeight = UITableView.automaticDimension
+        //tableView.estimatedRowHeight = UITableView.automaticDimension
     }
 }
 

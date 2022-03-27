@@ -20,30 +20,30 @@ class CustomFontViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupDynamicTypeForCustomFont()
-        setupImage()
+//        setupDynamicTypeForCustomFont()
+//        setupImage()
     }
     
-    private func setupDynamicTypeForCustomFont() {
-        let font = UIFont(name: "Chalkduster", size: 23.0) ?? UIFont.systemFont(ofSize: 23.0)
-        customFontTitle.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: font)
-        customFontTitle.adjustsFontForContentSizeCategory = true
-    }
+//    private func setupDynamicTypeForCustomFont() {
+//        let font = UIFont(name: "Chalkduster", size: 23.0) ?? UIFont.systemFont(ofSize: 23.0)
+//        customFontTitle.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: font)
+//        customFontTitle.adjustsFontForContentSizeCategory = true
+//    }
 
-    private func setupImage() {
-        let metric = UIFontMetrics(forTextStyle: .body).scaledValue(for: 60)
-        imageHeight.constant = metric
-        imageWidth.constant = metric
-    }
+//    private func setupImage() {
+//        let metric = UIFontMetrics(forTextStyle: .body).scaledValue(for: 60)
+//        imageHeight.constant = metric
+//        imageWidth.constant = metric
+//    }
 
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        setupImage()
-        let isAccessibilityCategory = traitCollection.preferredContentSizeCategory.isAccessibilityCategory
-        if isAccessibilityCategory {
-            stackView.axis = .vertical
-        } else {
-            stackView.axis = .horizontal
-        }
-    }
+//    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+//        //setupImage()
+//        let isAccessibilityCategory = traitCollection.preferredContentSizeCategory.isAccessibilityCategory
+//        if isAccessibilityCategory {
+//            stackView.axis = .vertical
+//        } else {
+//            stackView.axis = .horizontal
+//        }
+//    }
 
 }
