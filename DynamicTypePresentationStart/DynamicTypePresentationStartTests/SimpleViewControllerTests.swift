@@ -24,28 +24,51 @@ import XCTest
 //    accessibilityExtraExtraLarge
 //    accessibilityExtraExtraExtraLarge
 
-class SimpleViewControllerTest: XCTestCase {
+class SimpleViewControllerTests: XCTestCase {
 
     func test_dynamicType() {
         let sut = makeSUT()
         
         record(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .extraSmall)),
-               named: "SimpleViewController_extraSmall")
-        
+               named: "SimpleViewController/1-extraSmall")
+
         record(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .extraLarge)),
-               named: "SimpleViewController_extraLarge")
-        
+               named: "SimpleViewController/2-extraLarge")
+
         record(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .extraExtraExtraLarge)),
-               named: "SimpleViewController_extraExtraExtraLarge")
-        
+               named: "SimpleViewController/3-extraExtraExtraLarge")
+
         record(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .accessibilityMedium)),
-               named: "SimpleViewController_accessibilityMedium")
-        
+               named: "SimpleViewController/4-accessibilityMedium")
+
         record(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .accessibilityExtraLarge)),
-               named: "SimpleViewController_accessibilityExtraLarge")
-        
+               named: "SimpleViewController/5-accessibilityExtraLarge")
+
         record(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .accessibilityExtraExtraExtraLarge)),
-               named: "SimpleViewController_accessibilityExtraExtraExtraLarge")
+               named: "SimpleViewController/6-accessibilityExtraExtraExtraLarge")
+
+        
+        
+        
+        
+        
+//        assert(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .extraSmall)),
+//               named: "SimpleViewController/1-extraSmall")
+//
+//        assert(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .extraLarge)),
+//               named: "SimpleViewController/2-extraLarge")
+//
+//        assert(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .extraExtraExtraLarge)),
+//               named: "SimpleViewController/3-extraExtraExtraLarge")
+//
+//        assert(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .accessibilityMedium)),
+//               named: "SimpleViewController/4-accessibilityMedium")
+//
+//        assert(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .accessibilityExtraLarge)),
+//               named: "SimpleViewController/5-accessibilityExtraLarge")
+//
+//        assert(snapshot: sut.snapshot(for: .iPhone8(contentSizeCategory: .accessibilityExtraExtraExtraLarge)),
+//               named: "SimpleViewController/6-accessibilityExtraExtraExtraLarge")
     }
     
     
